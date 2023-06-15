@@ -1,18 +1,18 @@
-import '../styles/globals.css';
+import "../styles/globals.css";
 
-import { Montserrat, Raleway } from '@next/font/google';
+import { Montserrat, Raleway } from "next/font/google";
 
 const mont = Montserrat({
-  weight: '400',
-  subsets:  ['latin', 'latin-ext'],
-  variable: '--font-mont',
-}); 
+  weight: "400",
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-mont",
+});
 
 const openSans = Raleway({
-  weight:   ['400', '700'],
-  subsets:  ['latin', 'latin-ext'],
-  variable: '--font-opensans',
-}); 
+  weight: ["400", "700"],
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-opensans",
+});
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }) {
         <Component {...pageProps} />
       </main>
     </>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;
