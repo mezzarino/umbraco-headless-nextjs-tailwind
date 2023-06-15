@@ -21,5 +21,8 @@ jobs:
             - ~/.cache/yarn
           key: v1-cache-dependencies-{{ checksum "yarn.lock" }}-{{ checksum "package.json" }}-{{ arch }}
       - run:
+          name: Lint
+          command: yarn lint
+      - run:
           name: Build
           command: yarn build
