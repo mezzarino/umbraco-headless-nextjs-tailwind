@@ -24,5 +24,8 @@ jobs:
           name: Lint
           command: yarn lint
       - run:
+          name: Test
+          command: jest
+      - run:
           name: Build
           command: yarn build
