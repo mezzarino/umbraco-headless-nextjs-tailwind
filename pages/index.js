@@ -18,7 +18,7 @@ export default function Home({ content, brands }) {
 
       <div
         data-theme="travelex"
-        className="mx-auto flex p-6 bg-gray-200 mt-10 rounded-lg shadow-xl"
+        className="mx-auto flex p-6 bg-gray-200 rounded-lg shadow-xl h-screen"
       >
         <div className="ml-6 pt-1">
           <h1 className="text-2xl text-primary leading-tight font-title">

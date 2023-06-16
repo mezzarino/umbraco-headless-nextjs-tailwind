@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <meta name="robots" content="noindex" />
       </Head>
-      <main className={`${mont.variable} ${openSans.variable}`}>
+      <main className={`${mont.variable} ${openSans.variable} h-screen`}>
         <Component {...pageProps} />
       </main>
     </>
