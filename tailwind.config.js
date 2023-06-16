@@ -21,7 +21,7 @@ module.exports = {
       themes: [
         {
           name: "tesco",
-          selectors: ['[data-theme="tesco"]'],
+          selectors: ['[data-theme="tbrand"]'],
           extend: {
             colors: {
               primary: "red",
@@ -34,7 +34,7 @@ module.exports = {
         },
         {
           name: "sainsburys",
-          selectors: ['[data-theme="sainsburys"]'],
+          selectors: ['[data-theme="sbrand"]'],
           extend: {
             colors: {
               primary: "orange",

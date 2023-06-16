@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import Head from "next/head";
 
 import { Montserrat, Raleway } from "next/font/google";
 
@@ -17,6 +18,9 @@ const openSans = Raleway({
 function MyApp({ Component, pageProps }) {
   return (
     <>
+      <Head>
+        <meta name="robots" content="noindex" />
+      </Head>
       <main className={`${mont.variable} ${openSans.variable}`}>
         <Component {...pageProps} />
       </main>
