@@ -24,7 +24,7 @@ export default function Home({ content, brands }) {
           <div>
             {brands.map(({ id, url, title }) => (
               <div key={id}>
-                <Link href={url}>
+                <Link href={url} className="underline">
                   <div>
                     <h2>{title}</h2>
                   </div>
