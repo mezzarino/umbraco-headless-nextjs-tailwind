@@ -34,15 +34,16 @@ export default function Artist({
                 Go back
               </Link>
             </div>
-            <div className="relative">
-              <Image
-                width="480"
-                height="320"
-                src={image.src}
-                alt={imageCredits}
-                quality="70"
-                className="mt-5"
-              />
+            <div>
+              <div className="aspect-video w-full relative mt-5">
+                <Image
+                  fill
+                  src={image.src}
+                  alt={imageCredits}
+                  quality="70"
+                  className="object-cover"
+                />
+              </div>
               <p>{imageCredits}</p>
             </div>
           </div>
