@@ -11,13 +11,14 @@ export default function Artist({
     <>
       <Head>
         <title>{title}</title>
+        <meta name="description" content={`Content page for ${title}`} />
       </Head>
       <div
         data-theme={`${title}`.toLowerCase()}
         className={`mx-auto flex p-6 bg-gray-200 mt-10 rounded-lg shadow-xl`}
       >
         <div className="ml-6 pt-1">
-          <h1 className="text-2xl text-primary leading-tight font-title">
+          <h1 className="text-2xl text-primary leading-tight font-title font-bold">
             {title}
           </h1>
           <div

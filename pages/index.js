@@ -10,6 +10,10 @@ export default function Home({ content, brands }) {
     <>
       <Head>
         <title>{content.title}</title>
+        <meta
+          name="description"
+          content={`Content page for ${content.title}`}
+        />
       </Head>
 
       <div
