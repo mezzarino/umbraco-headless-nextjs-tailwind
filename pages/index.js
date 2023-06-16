@@ -14,22 +14,18 @@ export default function Home({ content, brands }) {
 
       <div
         data-theme="travelex"
-        className="mx-auto flex p-6 bg-gray-100 mt-10 rounded-lg shadow-xl"
+        className="mx-auto flex p-6 bg-gray-200 mt-10 rounded-lg shadow-xl"
       >
         <div className="ml-6 pt-1">
           <h1 className="text-2xl text-primary leading-tight font-title">
             {content.title}
           </h1>
           <Widget />
-          <div>
+          <div className="mt-5">
             {brands.map(({ id, url, title }) => (
-              <div key={id}>
-                <Link href={url} className="underline">
-                  <div>
-                    <h2>{title}</h2>
-                  </div>
-                </Link>
-              </div>
+              <Link href={url} className="underline p-4" key={id}>
+                {title}
+              </Link>
             ))}
           </div>
         </div>

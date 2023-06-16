@@ -14,7 +14,7 @@ export default function Artist({
       </Head>
       <div
         data-theme={`${title}`.toLowerCase()}
-        className={`mx-auto flex p-6 bg-gray-100 mt-10 rounded-lg shadow-xl`}
+        className={`mx-auto flex p-6 bg-gray-200 mt-10 rounded-lg shadow-xl`}
       >
         <div className="ml-6 pt-1">
           <h1 className="text-2xl text-primary leading-tight font-title">
@@ -28,14 +28,17 @@ export default function Artist({
           />
           <Widget />
 
-          <Link href="/">Go back</Link>
+          <Link href="/" className="underline p-4 mt-5">
+            Go back
+          </Link>
 
           <Image
             src={image.src}
-            height="326"
-            width="481"
+            width="480"
+            height="320"
             alt={imageCredits}
             quality="70"
+            className="mt-5"
           />
           <p>{imageCredits}</p>
         </div>
