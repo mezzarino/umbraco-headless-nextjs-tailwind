@@ -6,7 +6,6 @@
     "dev": "next dev",
     "format": "prettier --write .",
     "lint": "prettier --check . & next lint",
-    "test jest": "jest",
     "build": "next build",
     "start": "next start",
     "cypress:open": "cypress open",
@@ -14,8 +13,8 @@
     "component:headless": "cypress run --component",
     "percy:cypress": "percy exec -- cypress run",
     "start:server": "serve -l 3000 .",
-    "test": "start-server-and-test start http://localhost:3000 percy:cypress"
-
+    "test": "start-server-and-test start http://localhost:3000 percy:cypress",
+    "test:jest": "jest"
   },
   "dependencies": {
     "dotenv": "^16.3.1",
