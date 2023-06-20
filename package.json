@@ -6,20 +6,31 @@
     "dev": "next dev",
     "format": "prettier --write .",
     "lint": "prettier --check . & next lint",
-    "test": "jest",
+    "test jest": "jest",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "component:headless": "cypress run --component",
+    "percy:cypress": "percy exec -- cypress run",
+    "start:server": "serve -l 3000 .",
+    "test": "start-server-and-test start http://localhost:3000 percy:cypress"
+
   },
   "dependencies": {
     "dotenv": "^16.3.1",
     "next": "^13.4.4",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "start-server-and-test": "^2.0.0"
   },
   "devDependencies": {
+    "@percy/cli": "^1.26.0",
+    "@percy/cypress": "^3.1.2",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
     "autoprefixer": "^10.4.14",
+    "cypress": "^12.14.0",
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.5",
     "eslint-config-prettier": "^8.8.0",
