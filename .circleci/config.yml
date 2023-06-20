@@ -7,6 +7,9 @@ jobs:
   build:
     docker:
       - image: cimg/node:16.14.2
+        environment:
+          UMB_PROJECT_ALIAS: $UMB_PROJECT_ALIAS
+          UMB_API_KEY: $UMB_API_KEY
     steps:
       - checkout
       - restore_cache:
